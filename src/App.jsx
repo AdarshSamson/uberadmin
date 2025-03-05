@@ -36,7 +36,6 @@ const Login = React.lazy(() => import('./pages/login'));
 //   );
 // };
 const App = () => {
-  
   return (
     <BrowserRouter >
     {/* <DarkModeProvider> */}
