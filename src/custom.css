@@ -1,0 +1,11 @@
+/* .startbar {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .startbar.open {
+    transform: translateX(0);
+  }
+  
+  .startbar:not(.open) {
+    transform: translateX(-80%);
+  } */

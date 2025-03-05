@@ -17,7 +17,7 @@ const routes = [
     routes: [
       // submenu
       {
-        path: `${BASE_URL}/sales-branchwise`,
+        path: `${BASE_URL}/dashboard`,
         name: 'Sales',
       },
       {
