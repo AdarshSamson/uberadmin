@@ -1,11 +1,30 @@
-/* .startbar {
-    transition: transform 0.3s ease-in-out;
+.global-loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* Ensure it stays above other elements */
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+/* custom.css */
+.fade-out {
+  animation: fadeOut 0.5s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
   }
-  
-  .startbar.open {
-    transform: translateX(0);
+  to {
+    opacity: 0;
+    visibility: hidden;
   }
-  
-  .startbar:not(.open) {
-    transform: translateX(-80%);
-  } */
+}
