@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useTheme } from "../context/ThemeContext";
-
+import { useAuth } from "../context/AuthContext";
 const Topbar = ({toggleSidebar  }) => {
-
+ const { logout } = useAuth();
   const { isDarkMode, toggleTheme } = useTheme();
   return (
     <div className="topbar d-print-none">
@@ -489,8 +489,8 @@ const Topbar = ({toggleSidebar  }) => {
                 <i className="las la-question-circle fs-18 me-1 align-text-bottom" />{" "}
                 Help Center
               </a>
-              <div className="dropdown-divider mb-0" />
-              <a className="dropdown-item text-danger" href="auth-login.html">
+              <div className="dropdown-divider mb-0" onClick={logout}/>
+              <a className="dropdown-item text-danger" href="/login">
                 <i className="las la-power-off fs-18 me-1 align-text-bottom" />{" "}
                 Logout
               </a>

@@ -9,12 +9,12 @@ const routes = [
         name: 'Dashboards',
         routes: [
           { path: `${BASE_URL}/dashboard`, name: 'Analytics' },
-          { path: `${BASE_URL}/ecommerce-index.html`, name: 'Ecommerce' },
+          // { path: `${BASE_URL}/ecommerce-index.html`, name: 'Ecommerce' },
         ],
       },
       {
         icon: 'iconoir-view-grid',
-        name: 'Applications',
+        name: 'Masters',
         routes: [
           {
             name: 'Analytics',
@@ -23,30 +23,30 @@ const routes = [
               { path: `${BASE_URL}/analytics-reports.html`, name: 'Reports' },
             ],
           },
-          {
-            name: 'Projects',
-            routes: [
-              { path: `${BASE_URL}/projects-clients.html`, name: 'Clients' },
-              { path: `${BASE_URL}/projects-team.html`, name: 'Team' },
-              { path: `${BASE_URL}/projects-project.html`, name: 'Project' },
-              { path: `${BASE_URL}/projects-task.html`, name: 'Task' },
-              { path: `${BASE_URL}/projects-kanban-board.html`, name: 'Kanban Board' },
-              { path: `${BASE_URL}/projects-chat.html`, name: 'Chat' },
-              { path: `${BASE_URL}/projects-users.html`, name: 'Users' },
-              { path: `${BASE_URL}/projects-create.html`, name: 'Project Create' },
-            ],
-          },
-          {
-            name: 'Ecommerce',
-            routes: [
-              { path: `${BASE_URL}/ecommerce-products.html`, name: 'Products' },
-              { path: `${BASE_URL}/ecommerce-customers.html`, name: 'Customers' },
-              { path: `${BASE_URL}/ecommerce-customer-details.html`, name: 'Customer Details' },
-              { path: `${BASE_URL}/ecommerce-orders.html`, name: 'Orders' },
-              { path: `${BASE_URL}/ecommerce-order-details.html`, name: 'Order Details' },
-              { path: `${BASE_URL}/ecommerce-refunds.html`, name: 'Refunds' },
-            ],
-          },
+          // {
+          //   name: 'Projects',
+          //   routes: [
+          //     { path: `${BASE_URL}/projects-clients.html`, name: 'Clients' },
+          //     { path: `${BASE_URL}/projects-team.html`, name: 'Team' },
+          //     { path: `${BASE_URL}/projects-project.html`, name: 'Project' },
+          //     { path: `${BASE_URL}/projects-task.html`, name: 'Task' },
+          //     { path: `${BASE_URL}/projects-kanban-board.html`, name: 'Kanban Board' },
+          //     { path: `${BASE_URL}/projects-chat.html`, name: 'Chat' },
+          //     { path: `${BASE_URL}/projects-users.html`, name: 'Users' },
+          //     { path: `${BASE_URL}/projects-create.html`, name: 'Project Create' },
+          //   ],
+          // },
+          // {
+          //   name: 'Ecommerce',
+          //   routes: [
+          //     { path: `${BASE_URL}/ecommerce-products.html`, name: 'Products' },
+          //     { path: `${BASE_URL}/ecommerce-customers.html`, name: 'Customers' },
+          //     { path: `${BASE_URL}/ecommerce-customer-details.html`, name: 'Customer Details' },
+          //     { path: `${BASE_URL}/ecommerce-orders.html`, name: 'Orders' },
+          //     { path: `${BASE_URL}/ecommerce-order-details.html`, name: 'Order Details' },
+          //     { path: `${BASE_URL}/ecommerce-refunds.html`, name: 'Refunds' },
+          //   ],
+          // },
           { path: `${BASE_URL}/apps-chat.html`, name: 'Chat' },
           { path: `${BASE_URL}/apps-contact-list.html`, name: 'Contact List' },
           { path: `${BASE_URL}/apps-calendar.html`, name: 'Calendar' },

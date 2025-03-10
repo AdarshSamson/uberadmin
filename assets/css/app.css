@@ -103,6 +103,9 @@
 	-webkit-box-shadow:none;
 	box-shadow:none
 }
+.text-white {
+	color:#fff
+}
 .text-gray-100 {
 	color:#f4f6f9
 }
@@ -192,7 +195,7 @@ html[data-bs-theme=dark] .btn-outline-light:active {
 	-webkit-box-shadow:0 3px 16px rgba(142,134,171,.05);
 	box-shadow:0 3px 16px rgba(142,134,171,.05);
 	border:none;
-	margin-bottom:1.5rem
+	/* margin-bottom:1.5rem */
 }
 .card .card-header {
 	border-bottom:none;
@@ -3708,4 +3711,117 @@ ul.listree-submenu-items li a {
 .listree-submenu-heading {
 	padding-bottom:12px
 }
-/*# sourceMappingURL=app.min.css.map */
+
+/* .login-bg-dark{
+	background-image: url('../images/bg-inner.png');
+	background-size: cover;
+	background-position: center;
+} */
+
+.login-bg-light{
+	background-image: url('../images/bg-inner.png');
+	background-size: cover;
+	background-position: center;
+}
+
+.login-card {
+	/* background:linear-gradient(to bottom, #e4f2ff, #c3e2ff, #95ccff, #2e86d9, #0360b9, #002d56); */
+	/* background: linear-gradient(to top, #0057b8, #66aadd, #c2e0f5, #ffffff); */
+
+	background-image: url('../images/bg-login.webp');
+	background-size: cover;
+	background-position: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	padding: 20px; /* Adjust spacing */
+	max-width: 380px; /* Reduce width */
+	width: 100%;
+	border-radius: 20px 0 0 20px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	position: relative; /* Required for overlay */
+	overflow: hidden; /* Ensure overlay doesn't overflow */
+	
+}
+
+.login-card::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.7); 
+	background: inherit;
+	filter: blur(2px); /* Apply blur effect */
+	z-index: 1; /* Place overlay above the background image */
+}
+
+.login-card > * {
+	position: relative;
+	z-index: 2; /* Place content above the overlay */
+}
+.login-isomorphic {
+    background-color:rgb(0 0 0 / 6%);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); /* Blur effect */
+	-webkit-box-shadow:0 3px 4px rgba(142,134,171,.1);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+	border-radius: 0 20px 20px 0;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: 0.3s ease-in-out;
+	padding: 20px; /* Adjust spacing */
+    max-width: 450px; /* Reduce width */
+    width: 100%;
+}
+.login-isomorphic:hover {
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+
+
+@media (max-width: 991px) {
+	.login-card {
+		padding: 5px; /* Adjust spacing */
+		max-width: 260px; /* Reduce width */
+		width: 100%;
+    }
+}
+.stripe-container {
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	height: 100%;
+	justify-content: center;
+	padding: 0 4px;
+	
+  }
+  
+  .blue-stripe {
+	width: 1px; /* Adjust thickness */
+	height: 100%;
+	background-color: #22c55e;
+	margin: 4px 0;
+	border-radius: 4px;
+  }
+  
+  .stripe-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: #2259a8;
+	padding: 5px 8px;
+	border-radius: 4px;
+	z-index: 2;
+  }
+
+  

@@ -10,7 +10,7 @@ const Dashboard = () => {
 
     <div >
       <div className="container-xxl">
-        <div className="row justify-content-center">
+        <div className="row justify-content-center mb-4">
           <div className="col-md-6 col-lg-4">
             
             <div className="card">
@@ -99,7 +99,7 @@ const Dashboard = () => {
           {/*end col*/}
         </div>
         {/*end row*/}
-        <div className="row justify-content-center">
+        <div className="row justify-content-center mb-4">
           <div className="col-md-6 col-lg-8">
             <div className="card">
               <div className="card-header">
@@ -233,7 +233,7 @@ const Dashboard = () => {
           {/*end col*/}
         </div>
         {/*end row*/}
-        <div className="row">
+        <div className="row ">
           <div className="col-lg-6">
             <div className="card card-h-100">
               <div className="card-header">
@@ -505,7 +505,7 @@ const Dashboard = () => {
           {/*end col*/}
         </div>
         {/*end row*/}
-        <div className="row justify-content-center">
+        <div className="row justify-content-center mb-4">
           <div className="col-md-6 col-lg-4">
             <div className="card">
               <div className="card-header">
@@ -623,7 +623,7 @@ const Dashboard = () => {
               {/*end card-header*/}
               <div className="card-body pt-0">
                 <div className="row">
-                <WorldMap />
+                {/* <WorldMap /> */}
                   {/*end col*/}
                   <div className="col-lg-4 align-self-center">
                     <div className="d-flex align-items-center my-3">

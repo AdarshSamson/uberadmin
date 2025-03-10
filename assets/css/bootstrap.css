@@ -9047,6 +9047,9 @@ textarea.form-control-lg {
 .bg-gradient {
 	background-image:var(--bs-gradient)!important
 }
+.bg-dark{
+	background-color:#202221!important
+}
 .user-select-all {
 	-webkit-user-select:all!important;
 	-moz-user-select:all!important;

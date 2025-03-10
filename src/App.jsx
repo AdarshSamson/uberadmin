@@ -4,7 +4,10 @@ import { ThemeProvider } from './context/ThemeContext';
 import GlobalSuspense from './components/GlobalSuspense';
 import ErrorBoundary from './components/ErrorBoundary';
 import './custom.css';
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import AuthRoute from './routes/authRoute';
+import { AuthProvider } from './context/AuthContext';
 // Lazy-loaded components
 const DefaultLayout = lazy(() => import('./containers/layout'));
 const Login = lazy(() => import('./pages/login'));
@@ -12,16 +15,16 @@ const Login = lazy(() => import('./pages/login'));
 const App = () => {
   return (
     <ThemeProvider>
+      <AuthProvider>
       <BrowserRouter>
         <ErrorBoundary>
           <Suspense fallback={<GlobalSuspense />}>
-            <Routes>
-              <Route exact path="/login" element={<Login />} />
-              <Route path="*" element={<DefaultLayout />} />
-            </Routes>
+          <ToastContainer />
+           <AuthRoute/>
           </Suspense>
         </ErrorBoundary>
       </BrowserRouter>
+      </AuthProvider>
     </ThemeProvider>
   );
 };

@@ -30,7 +30,7 @@ class ErrorBoundary extends React.Component {
                   <div className="text-center p-3">
                     <a href="index.html" className="logo logo-admin">
                       <img
-                        src="assets/images/logo-sm.png"
+                        src="assets/images/pmvlogoMain.png"
                         height={50}
                         alt="logo"
                         className="auth-logo"

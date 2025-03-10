@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-  const baseURL = 'https://pmw-mis.populargroup.in/back-wheel/api';
+  const baseURL = 'http://192.168.0.155:8188/pmv-uberbackend/api';
 
 
 
@@ -17,7 +17,7 @@ export const get = async (endpoint, ignoreUnauthorized = false ) => {
     const response = await axios.get(`${baseURL}/${endpoint}`, { headers });
     return response.data;
   } catch (error) {
-    if (!ignoreUnauthorized && error.response && (error.response.status === 401 || error.response.status === 400)) {
+    if (!ignoreUnauthorized && error.response && (error.response.status === 401 )) {
       handleUnauthorizedError();
     } else {
       throw error;
@@ -32,7 +32,7 @@ export const post = async (endpoint, data ,ignoreUnauthorized = false) => {
     const response = await axios.post(`${baseURL}/${endpoint}`, data, { headers });
     return response.data;
   } catch (error) {
-    if (!ignoreUnauthorized && error.response && (error.response.status === 401 || error.response.status === 400)) {
+    if (!ignoreUnauthorized && error.response && (error.response.status === 401 )) {
       handleUnauthorizedError();
     } else {
       throw error;
