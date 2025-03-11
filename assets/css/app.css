@@ -3815,14 +3815,26 @@ ul.listree-submenu-items li a {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	color: white;
 	font-size: 15px;
 	font-weight: bold;
 	text-transform: uppercase;
-	background: #2259a8;
-	padding: 5px 8px;
-	border-radius: 4px;
+	background:linear-gradient(45deg, #ffffff, #aebaf3e3);
+	padding: 3px;
+	border-radius: 50%;
 	z-index: 2;
   }
 
-  
+
+  .stripe-text img{
+	animation: rotation infinite 12s linear;
+  }
+
+  @keyframes rotation{
+	from{
+	  transform:rotate(0deg);
+	}
+	
+	to{
+	  transform:rotate(360deg);
+	}
+  }

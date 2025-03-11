@@ -17,7 +17,7 @@ export default function LoginPage({}) {
   const [error, setError] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [branches, setBranches] = useState([]); // State to store branch data
-  const [isLoading, setIsLoading] = useState(true); // State to handle loading
+  const [isLoading, setIsLoading] = useState(false); // State to handle loading
 
   const validationSchema = Yup.object({
     user_name: Yup.string().required("Username is required"),
@@ -88,7 +88,7 @@ export default function LoginPage({}) {
   <div className="row g-0 justify-content-center"> 
 
     <div className="col-lg-4 col-md-6 login-card  d-none d-sm-block">
-    <div className="d-flex flex-column align-items-center text-center p-5">
+    <div className="d-flex flex-column align-items-center text-center px-5 py-4">
         <img
           src="assets/images/pmvlogo.png" 
           alt="Logo"
@@ -97,9 +97,10 @@ export default function LoginPage({}) {
         />
          <h6 className="mb-4 fw-bold" style={{color: "#114da3"}}>Popular Motor Ventures LLP</h6>
         <h2 className="mb-3 " style={{color: "rgb(53 53 53)"}}>Welcome to PMV</h2>
-        <p style={{color: "rgb(39 39 39)"}} className="mb-4">
-          Your one-stop solution for seamless management.
-        </p>
+        <p style={{ color: "rgb(39 39 39)", fontFamily: " monospace" }} className="mb-4">
+  Your one-stop solution for seamless management.
+</p>
+
         
 
       </div>
@@ -119,8 +120,13 @@ export default function LoginPage({}) {
     <div className="stripe-container">
       <div className="blue-stripe"></div>
       <div className="blue-stripe"></div>
-      
-      <div className="stripe-text"> <div className='glowing-btn'><span className='glowing-txt'>P<span className='faulty-letter'>M</span>V</span></div></div>
+      <div className="stripe-text"><img
+          src="assets/images/pmvlogoMain.png" 
+          alt="Logo"
+          className="img-fluid "
+          style={{ maxWidth: "18px" }} 
+        /> </div>
+      {/* <div className="stripe-text"> <div className='glowing-btn'><span className='glowing-txt'>P<span className='faulty-letter'>M</span>V</span></div></div> */}
     </div>
   </div>
 
@@ -286,14 +292,14 @@ export default function LoginPage({}) {
             )}
           </Formik>
 
-          <div className="text-center mb-2 mt-2">
+          {/* <div className="text-center mb-2 mt-2">
             <p className="text-white">
               Don't have an account?{" "}
               <a href="auth-register.html" className="text-primary ms-2  fw-bold">
                 Free Register
               </a>
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
