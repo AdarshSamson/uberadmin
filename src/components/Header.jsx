@@ -4,6 +4,9 @@ import { useAuth } from "../context/AuthContext";
 const Topbar = ({toggleSidebar  }) => {
  const { logout } = useAuth();
   const { isDarkMode, toggleTheme } = useTheme();
+  const handleLogout = async () => {
+    await logout();
+  };
   return (
     <div className="topbar d-print-none">
     <div className="container-xxl">
@@ -50,7 +53,7 @@ const Topbar = ({toggleSidebar  }) => {
               aria-expanded="false"
             >
               <img
-                src="assets/images/flags/us_flag.jpg"
+                src="../assets/images/flags/us_flag.jpg"
                 alt=""
                 className="thumb-sm rounded-circle"
               />
@@ -58,7 +61,7 @@ const Topbar = ({toggleSidebar  }) => {
             <div className="dropdown-menu">
               <a className="dropdown-item" href="#">
                 <img
-                  src="assets/images/flags/us_flag.jpg"
+                  src="../assets/images/flags/us_flag.jpg"
                   alt=""
                   height={15}
                   className="me-2"
@@ -67,7 +70,7 @@ const Topbar = ({toggleSidebar  }) => {
               </a>
               <a className="dropdown-item" href="#">
                 <img
-                  src="assets/images/flags/spain_flag.jpg"
+                  src="../assets/images/flags/spain_flag.jpg"
                   alt=""
                   height={15}
                   className="me-2"
@@ -76,7 +79,7 @@ const Topbar = ({toggleSidebar  }) => {
               </a>
               <a className="dropdown-item" href="#">
                 <img
-                  src="assets/images/flags/germany_flag.jpg"
+                  src="../assets/images/flags/germany_flag.jpg"
                   alt=""
                   height={15}
                   className="me-2"
@@ -85,7 +88,7 @@ const Topbar = ({toggleSidebar  }) => {
               </a>
               <a className="dropdown-item" href="#">
                 <img
-                  src="assets/images/flags/french_flag.jpg"
+                  src="../assets/images/flags/french_flag.jpg"
                   alt=""
                   height={15}
                   className="me-2"
@@ -444,7 +447,7 @@ const Topbar = ({toggleSidebar  }) => {
               aria-expanded="false"
             >
               <img
-                src="assets/images/users/avatar-1.jpg"
+                src="../assets/images/users/avatar-1.jpg"
                 alt=""
                 className="thumb-lg rounded-circle"
               />
@@ -453,7 +456,7 @@ const Topbar = ({toggleSidebar  }) => {
               <div className="d-flex align-items-center dropdown-item py-2 bg-secondary-subtle">
                 <div className="flex-shrink-0">
                   <img
-                    src="assets/images/users/avatar-1.jpg"
+                    src="../assets/images/users/avatar-1.jpg"
                     alt=""
                     className="thumb-md rounded-circle"
                   />
@@ -489,8 +492,8 @@ const Topbar = ({toggleSidebar  }) => {
                 <i className="las la-question-circle fs-18 me-1 align-text-bottom" />{" "}
                 Help Center
               </a>
-              <div className="dropdown-divider mb-0" onClick={logout}/>
-              <a className="dropdown-item text-danger" href="/login">
+              <div className="dropdown-divider mb-0" />
+              <a className="dropdown-item text-danger" onClick={handleLogout} style={{ cursor: "pointer" }}>
                 <i className="las la-power-off fs-18 me-1 align-text-bottom" />{" "}
                 Logout
               </a>

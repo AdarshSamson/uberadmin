@@ -87,34 +87,34 @@ export default function LoginPage({}) {
           <div className="card-body">
   <div className="row g-0 justify-content-center"> 
 
-    <div className="col-lg-4 col-md-6 login-card  d-none d-sm-block">
-    <div className="d-flex flex-column align-items-center text-center px-5 py-4">
-        <img
-          src="assets/images/pmvlogo.png" 
-          alt="Logo"
-          className="img-fluid mb-1"
-          style={{ maxWidth: "180px" }} 
-        />
-         <h6 className="mb-4 fw-bold" style={{color: "#114da3"}}>Popular Motor Ventures LLP</h6>
-        <h2 className="mb-3 " style={{color: "rgb(53 53 53)"}}>Welcome to PMV</h2>
-        <p style={{ color: "rgb(39 39 39)", fontFamily: " monospace" }} className="mb-4">
-  Your one-stop solution for seamless management.
-</p>
+  <div className="col-lg-4 col-md-6 login-card d-none d-sm-block position-relative" >
+  <div className="d-flex flex-column align-items-center text-center px-5 py-4">
+    <img
+      src="assets/images/pmvlogo.png"
+      alt="Logo"
+      className="img-fluid mb-1"
+      style={{ maxWidth: "180px" }}
+    />
+    <h6 className="mb-4 fw-bold" style={{ color: "#114da3" }}>Popular Motor Ventures LLP</h6>
+    <p style={{ color: "rgb(39 39 39)", fontFamily: "monospace" }} className="mb-4">
+      Your one-stop solution for seamless management.
+    </p>
+  </div>
 
-        
+  {/* Footer section fixed at the bottom */}
+  <div className="text-center w-100 position-absolute bottom-0  pb-3 " style={{left: "0"}}>
+    <hr className="my-1" />
+    <h6 className="mb-1 fs-10" style={{ color: "rgb(143 190 255)", letterSpacing: "2px" }}>
+      Powered by
+    </h6>
+    <a href="https://popitsolutions.com/" target="_blank" rel="noopener noreferrer">
+      <button className="btn align-items-center">
+        <img src={popularicon} alt="Popular Icon" className="img-fluid mb-1" style={{ maxWidth: "100px" }} />
+      </button>
+    </a>
+  </div>
+</div>
 
-      </div>
-      <div className="mt-auto text-center">
-      <hr className="my-1" />
-<h6 className="mb-1 fs-10 tracking-wide text-uppercase" style={{color: "rgb(224 237 255)"}}>Powered by</h6>
-<a href="https://popitsolutions.com/" target="_blank" rel="noopener noreferrer" >
-<button className="btn  align-items-center">
-    <img src={popularicon} alt="Popular Icon"  className="img-fluid mb-1" style={{ maxWidth: "100px" }}  />
-  </button>
-</a>
-
-      </div>
-    </div>
  {/* Double Blue Stripe */}
  <div className="col-auto position-relative d-none d-md-block">
     <div className="stripe-container">

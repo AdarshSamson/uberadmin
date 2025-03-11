@@ -69,11 +69,11 @@ const Sidebar = () => {
       <div className="brand">
         <a href="index.html" className="logo">
           <span>
-            <img src="assets/images/logo-sm.png" alt="logo-small" className="logo-sm" />
+            <img src="../assets/images/logo-sm.png" alt="logo-small" className="logo-sm" />
           </span>
           <span className="">
-            <img src="assets/images/logo-light.png" alt="logo-large" className="logo-lg logo-light" />
-            <img src="assets/images/logo-dark.png" alt="logo-large" className="logo-lg logo-dark" />
+            <img src="../assets/images/logo-light.png" alt="logo-large" className="logo-lg logo-light" />
+            <img src="../assets/images/logo-dark.png" alt="logo-large" className="logo-lg logo-dark" />
           </span>
         </a>
       </div>

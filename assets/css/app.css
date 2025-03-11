@@ -3725,12 +3725,12 @@ ul.listree-submenu-items li a {
 }
 
 .login-card {
-	/* background:linear-gradient(to bottom, #e4f2ff, #c3e2ff, #95ccff, #2e86d9, #0360b9, #002d56); */
+	background:linear-gradient(to bottom, #e4f2ff, #c3e2ff, #95ccff, #2e86d9, #0360b9, #002d56);
 	/* background: linear-gradient(to top, #0057b8, #66aadd, #c2e0f5, #ffffff); */
 
-	background-image: url('../images/bg-login.webp');
+	/* background-image: url('../images/bg-login.webp');
 	background-size: cover;
-	background-position: left;
+	background-position: left; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
